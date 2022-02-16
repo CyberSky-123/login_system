@@ -1,4 +1,16 @@
-button {
+.signIn {
+    text-align: center;
+    background-color: #07ac7e;
+    margin-top:20px;
+    padding: 15px 50px;
+    border-radius: 25px;
+    outline: none;
+    border:1;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.signUp {
     text-align: center;
     background-color: #07ac7e;
     margin-top:20px;
@@ -8,4 +20,5 @@ button {
     border:none;
     color:white;
     font-weight: bold;
+    cursor: pointer;
 }
