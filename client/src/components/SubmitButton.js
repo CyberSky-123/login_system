@@ -1,15 +1,19 @@
-import React from 'react'
-import "./SubmitButton.css"
+import React from 'react';
+import './SubmitButton.css';
+import './Login.css';
 
-const SubmitButton = (props) => {
-  return (
-    <div className='submitButton'>
-        <button>
-            {props.text}
-        </button>
+export const SignInButton = ({ signInText }) => {
+	return (
+		<div className='submitButton'>
+			<button className='signIn'>{signInText}</button>
+		</div>
+	);
+};
 
-    </div>
-  )
-}
-
-export default SubmitButton
+export const SignUpButton = ({ signUpText }) => {
+	return (
+		<div className='submitButton'>
+			<button className='signUp'>{signUpText}</button>
+		</div>
+	);
+};
