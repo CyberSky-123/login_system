@@ -4,8 +4,6 @@ import SubmitButton from './SubmitButton';
 import './Login.css'
 
 const LoginForm = () => {
-
-
   return (
     <div className='mainContainer col-12'>
         <div className='bannerContainer col-4'>
@@ -15,7 +13,7 @@ const LoginForm = () => {
               <p className='para_content'>To keep connected with us, please login with your personal information</p>
 
               <SubmitButton
-                text ={'SIGN IN'}
+                text  ={'SIGN IN'}
               />
             </div>
             
