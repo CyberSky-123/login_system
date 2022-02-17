@@ -1,13 +1,13 @@
 import React from 'react';
 import InputField from './InputField';
 import { SignInButton, SignUpButton } from './SubmitButton';
-import { FaFacebookSquare, FaLinkedin, FaTwitter} from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedin, FaTwitter, FaUserAlt} from "react-icons/fa";
 import './Login.css';
 
 const LoginForm = () => {
 	const iconStyles = {
 		fontSize: '20px',
-		
+		padding: '15px',
 	};
 	return (
 		<div className='mainContainer col-12'>
@@ -25,18 +25,25 @@ const LoginForm = () => {
 			</div>
 
 			<div className='contentContainer col-8'>
-				<div className='rightBanner'>
-					<h1>Create Account</h1>
+				<div className='rightBanner'> 
+					<h1>Create Account</h1> <br/>
 					<div className='iconsDiv'>
-				
-						<FaFacebookSquare style={iconStyles} />
-						<FaLinkedin fontSize={'20px'} />
-						<FaTwitter fontSize={'20px'} />
-					</div>
+						<span style={iconStyles} >
+							<FaFacebookSquare />
+						</span>
+						<span style={iconStyles}>
+							<FaLinkedin />
+						</span>
+						<span style={iconStyles}>		
+							<FaTwitter />
+						</span>
+					
+					</div> <br/>
+					<p>Or use your email for registration</p> <br />
          
-					<InputField type='text' placeholder='Name' />
+					<InputField type='text' placeholder='Name' /> 
 					<InputField type='email' placeholder='Email' />
-					<InputField type='password' placeholder='Password' />
+					<InputField type='password' placeholder='Password' /> <br />
 					<SignUpButton signUpText={'SIGN UP'} />
 				</div>
 			</div>
