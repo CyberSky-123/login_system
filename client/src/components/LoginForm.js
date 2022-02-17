@@ -1,9 +1,14 @@
 import React from 'react';
 import InputField from './InputField';
 import { SignInButton, SignUpButton } from './SubmitButton';
+import { FaFacebookSquare, FaLinkedin, FaTwitter} from "react-icons/fa";
 import './Login.css';
 
 const LoginForm = () => {
+	const iconStyles = {
+		fontSize: '20px',
+		
+	};
 	return (
 		<div className='mainContainer col-12'>
 			<div className='bannerContainer col-4'>
@@ -22,7 +27,13 @@ const LoginForm = () => {
 			<div className='contentContainer col-8'>
 				<div className='rightBanner'>
 					<h1>Create Account</h1>
-
+					<div className='iconsDiv'>
+				
+						<FaFacebookSquare style={iconStyles} />
+						<FaLinkedin fontSize={'20px'} />
+						<FaTwitter fontSize={'20px'} />
+					</div>
+         
 					<InputField type='text' placeholder='Name' />
 					<InputField type='email' placeholder='Email' />
 					<InputField type='password' placeholder='Password' />
