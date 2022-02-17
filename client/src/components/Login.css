@@ -328,7 +328,7 @@ p {
 }
 
 input {
-    padding: 15px 15px;
+    padding: 15px 45px;
     width: 100%;
     margin: 15px 0;
     border-radius: 10px;
@@ -342,4 +342,16 @@ input {
 }
 .iconsDiv {
     text-align: center;
+}
+.inputIcon {
+    position: relative;
+}
+.icon_name {
+    position:absolute;
+    z-index: 1;
+    top:27px; 
+    left:12px;
+    color:#07ac7e;
+    font-size: 1.2rem !important;  
+    opacity: 0.5; 
 }
